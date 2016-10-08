@@ -1,0 +1,45 @@
+﻿<Page x:Class="ServiceStation1.RegistrationPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+	Title="RegistrationPage">
+
+    <Grid>
+        <TextBox x:Name="TxtFirstName" HorizontalAlignment="Center" Height="43" Margin="110,27,70,230" TextWrapping="Wrap" VerticalAlignment="Center" Width="120"/>
+        <Label x:Name="LblFirstName" Content="First Name:" HorizontalAlignment="Center" Margin="35,22,195,230" VerticalAlignment="Center" Height="48"/>
+        <Label x:Name="LblLastName" Content="Last Name:" HorizontalAlignment="Center" Margin="36,52,195,200" VerticalAlignment="Center" Height="48"/>
+        <TextBox x:Name="TxtLastName" HorizontalAlignment="Center" Height="42" Margin="110,56,70,202" TextWrapping="Wrap" VerticalAlignment="Center" Width="120"/>
+        <Button x:Name="BtnSubmit" Content="Submit" Click="ButtonSubmitClicked" HorizontalAlignment="Center" Margin="61,234,165,26" VerticalAlignment="Center" Width="74" Height="40">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                    <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                    <GradientStop Color="#FFDDDDDD" Offset="0.5"/>
+                    <GradientStop Color="#FF2A02B4" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button Content="Check whether the client is already registered" Click="ButtonCheckIfRegisteredClicked" HorizontalAlignment="Center" Margin="3,188,47,71" VerticalAlignment="Center" Width="250" Height="41"/>
+        <TextBox x:Name="TxtBirth" HorizontalAlignment="Center" Height="42" Margin="110,82,70,176" TextWrapping="Wrap" VerticalAlignment="Center" Width="120"/>
+        <TextBox x:Name="TxtAdress" HorizontalAlignment="Center" Height="42" Margin="110,108,70,150" TextWrapping="Wrap" VerticalAlignment="Center" Width="120"/>
+        <TextBox x:Name="TxtPhone" HorizontalAlignment="Center" Height="43" Margin="110,134,70,123" TextWrapping="Wrap" VerticalAlignment="Center" Width="120"/>
+        <TextBox x:Name="TxtEmail" HorizontalAlignment="Center" Height="24" Margin="110,159,70,117" TextWrapping="Wrap" VerticalAlignment="Center" Width="120"/>
+        <Label x:Name="LblBirth" Content="Date Of Birth:" HorizontalAlignment="Center" Margin="23,80,195,172" VerticalAlignment="Center" Height="48"/>
+        <Label x:Name="LblAdress" Content="Adress:" HorizontalAlignment="Center" Margin="52,110,200,141" VerticalAlignment="Center" Height="49"/>
+        <Label x:Name="LblEmail" Content="Email:" HorizontalAlignment="Center" Margin="64,159,195,93" VerticalAlignment="Center" Height="48"/>
+        <Label x:Name="LblPhone" Content="Phone" HorizontalAlignment="Center" Margin="61,134,195,117" VerticalAlignment="Center" RenderTransformOrigin="0.519,-0.032" Height="49"/>
+        <Button x:Name="BtnHome" Content="Home" Click="ButtonHomeClicked" HorizontalAlignment="Center" Margin="155,234,70,26" VerticalAlignment="Center" Width="75" Height="40">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                    <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                    <GradientStop Color="#FFDDDDDD" Offset="0.5"/>
+                    <GradientStop Color="#FF2A02B4" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+    </Grid>
+</Page>

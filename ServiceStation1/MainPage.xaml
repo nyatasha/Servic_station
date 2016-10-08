@@ -1,0 +1,15 @@
+﻿<Page x:Class="ServiceStation1.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+	Title="MainPage">
+
+    <Grid>
+        <Button Content="Register a new client" Click="ButtonRegisterClicked" HorizontalAlignment="Center" Margin="93,145,90,0" VerticalAlignment="Top" Width="117"/>
+        <Button x:Name="BtnShowInfo" Content="Show clients' info"  Click="BtnShowInfoClicked" HorizontalAlignment="Center" Margin="93,172,90,0" VerticalAlignment="Top" Width="117"/>
+
+    </Grid>
+</Page>
